@@ -27,8 +27,9 @@ matrix2 = [4, 5, 6]
 
 result = []
 
-for (ms1, ms2) in zip(matrix1, matrix2):
-    result.append(ms1 + ms2)
+for (mat1, mat2) in zip(matrix1, matrix2):
+    for (m1, m2) in zip(mat1, mat2):
+        result.append(m1 + m2)
 
 print(f'Results are {result}')
 
